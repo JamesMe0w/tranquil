@@ -12,7 +12,7 @@ const { on } = require('process');
 const { lookup } = require('dns');
 
 
-const prefix = 'mt!';
+const prefix = 't!';
 
 
 
