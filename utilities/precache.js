@@ -32,7 +32,7 @@ exports.redditPrecacheScript = async function (subreddit, amount, nsfw, filename
 
         client.precache.posts.push(post) 
 
-        fs.writeFile (`../DiscordBot2/precache/${filename}`, JSON.stringify (client.precache), function writeJSON(err) {
+        fs.writeFile (`../tranquil-main/precache/${filename}`, JSON.stringify (client.precache), function writeJSON(err) {
             if (err) return console.log(err);
             console.log("Changed Data")
         });
