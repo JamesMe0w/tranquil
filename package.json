@@ -1,0 +1,26 @@
+{
+  "name": "tranquil",
+  "version": "1.0.0",
+  "description": "Discord Bot specified for the Tranquil server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesMe0w/tranquil.git"
+  },
+  "author": "JamesMe0w",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesMe0w/tranquil/issues"
+  },
+  "homepage": "https://github.com/JamesMe0w/tranquil#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "fs": "0.0.1-security",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.1",
+    "tsumiki-reddit.js": "^2.1.0"
+  }
+}
