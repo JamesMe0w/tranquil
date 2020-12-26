@@ -22,15 +22,42 @@ for(const file of commandFiles){
 }
 
 client.settings = require ("./admin/settings.json")
-const welcomer = require("./utilities/welcomer.js")
 
 
 client.on('ready', () => {
   console.log('Bot is now connected');
   client.user.setActivity(`${prefix}help`);
 
-  welcomer.memberJoinScript(client);
+  client.on('guildMemberAdd', (member) => {
+  
+    const channel = member.guild.channels.cache.get("721598478383317042")
+    const embed = new Discord.MessageEmbed()
+    .setColor(53606)
+    .setTitle("Welcome!")
+    .setDescription(`<@${member.id}> has joined Tranquil.`)
+    .setThumbnail(member.user.avatarURL())
+        
+    channel.send(embed)
+  
+  
+  })
+
+  client.on('guildMemberRemove', (member) => {
+  
+    const channel = member.guild.channels.cache.get("721598478383317042")
+    const embed = new Discord.MessageEmbed()
+    .setColor(15158332)
+    .setTitle("Goodbye, see you again 😞 !")
+    .setDescription(`${member.displayName} has left Tranquil.`)
+        
+    channel.send(embed)
+  
+  })
+  
 });
+
+
+
 
 
 
