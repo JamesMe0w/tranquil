@@ -1,4 +1,4 @@
 node_modules
-./precache/
-./admin/
+precache
+admin
 
